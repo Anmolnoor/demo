@@ -153,7 +153,9 @@ export function CardDemo({ className, ...props }: CardProps) {
 
           <Card>
             <CardContent className="flex flex-col gap-2 p-5 pt-3 text-start">
-              <div className="font-bold text-black">Compatibility</div>
+              <div className="font-bold text-black">
+                Compitation with other brands
+              </div>
               <div className="grid grid-cols-3 gap-4">
                 <div className="flex flex-col justify-center items-center">
                   <div className="w-16 h-16 bg-gray-800 rounded-full overflow-hidden">
@@ -326,7 +328,7 @@ const AnotherCard = ({ className, ...props }: CardProps) => {
         <Card>
           <CardContent className="flex flex-col gap-2 p-5 pt-3 text-start">
             <div className="font-bold text-black text-lg text-center">
-              Compatibility
+              Compitation with other brands
             </div>
             <div className="grid grid-cols-3 gap-4">
               <div className="flex flex-col justify-center items-center">
