@@ -3,7 +3,7 @@ import CardWithForm from "./components/Card";
 
 function App() {
   return (
-    <div className="flex flex-row gap-10 justify-center items-center">
+    <div className="flex justify-center items-center">
       <CardWithForm />
     </div>
   );
