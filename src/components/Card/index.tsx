@@ -48,10 +48,6 @@ const Headings = (props: HeadingsProps) => {
   );
 };
 
-const SubCard = ({ children }: { children: React.ReactNode }) => {
-  return <Card className="flex flex-col gap-2 p-5 pt-3">{children}</Card>;
-};
-
 export function CardDemo({ className, ...props }: CardProps) {
   return (
     // w-[380px]
