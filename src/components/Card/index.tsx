@@ -51,7 +51,7 @@ const Headings = (props: HeadingsProps) => {
 export function CardDemo({ className, ...props }: CardProps) {
   return (
     // w-[380px]
-    <Card className={cn("w-[480px]", className)} {...props}>
+    <Card className={cn("  max-w-[480px]", className)} {...props}>
       <CardHeader>
         <div className="mx-auto my-4 rounded-full overflow-hidden w-40 h-40 bg-gray-800">
           <img src={logo} alt="Image" className=" rounded-xl object-cover  " />
