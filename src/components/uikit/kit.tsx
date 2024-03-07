@@ -10,13 +10,13 @@ export const Headings = (props: HeadingsProps) => {
   return (
     <Card
       className={`p-2 gap-1 flex flex-row justify-center items-center ${
-        props.isActive ? "border-black" : ""
+        props.isActive ? "bg-white text-black" : ""
       } cursor-pointer`}
     >
       {props.icon}
       <div
         className={`${
-          props.isActive ? "text-black font-bold" : "text-gray-700"
+          props.isActive ? "text-black font-bold" : "text-gray-400"
         } text-xs w-16 text-center `}
       >
         {props.title}
