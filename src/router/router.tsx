@@ -1,15 +1,12 @@
 import HomePage from "@/pages";
 import ClothsPage from "@/pages/cloths";
+import { NotFound } from "@/pages/notFound";
 import {
   Navigate,
   Route,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-
-export const NotFound = () => {
-  return <div>Not Found</div>;
-};
 
 const router = createBrowserRouter(
   createRoutesFromElements(

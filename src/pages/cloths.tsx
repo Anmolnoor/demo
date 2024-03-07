@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-import { FaAngleRight, FaHandsWash, FaInfo } from "react-icons/fa";
+import { FaHandsWash, FaInfo } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import { LuChevronRightSquare } from "react-icons/lu";
 import { GiRecycle } from "react-icons/gi";
