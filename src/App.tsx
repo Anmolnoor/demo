@@ -1,12 +1,11 @@
+import { RouterProvider } from "react-router-dom";
+
+// assets and styles
+import router from "./router/router";
 import "./App.css";
-import CardWithForm from "./components/Card";
 
 function App() {
-  return (
-    <div className="flex justify-center items-center">
-      <CardWithForm />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
