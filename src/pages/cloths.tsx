@@ -18,14 +18,14 @@ import { GiRecycle } from "react-icons/gi";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
 
 // assets
-import logo from "./../assets/images/pp.png";
+import logo from "./../assets/images/ppp.webp";
 import { useState } from "react";
 
 // types
 type CardProps = React.ComponentProps<typeof Card>;
 
 const menus = [
-  "About",
+  "Overview",
   "Made with",
   "wash",
   "Recycle",
@@ -155,8 +155,13 @@ const ClothsPage = ({ className, ...props }: CardProps) => {
           ))}
         </div>
         {
-          <Card className="p-5 pt-3">
-            <div className="font-bold ">{content.title}</div>
+          <Card className="p-5 pt-3 cursor-pointer">
+            <div
+              className="font-bold "
+              onClick={() => alert("Yet! Under development!!")}
+            >
+              {content.title}
+            </div>
 
             <CardDescription>{content.description}</CardDescription>
           </Card>
@@ -168,8 +173,11 @@ const ClothsPage = ({ className, ...props }: CardProps) => {
               return;
             }
             return (
-              <div className="grid gap-2">
-                <Card className="p-5 pt-3 pb-0">
+              <div
+                className="grid gap-2"
+                onClick={() => alert("Yet! Under development!!")}
+              >
+                <Card className="p-5 pt-3 pb-0 cursor-pointer">
                   <div className="flex flex-col gap-4">
                     {item.info.map((subItem, subIndex) => {
                       return (
@@ -185,9 +193,6 @@ const ClothsPage = ({ className, ...props }: CardProps) => {
                                 : subItem.content}
                             </CardDescription>
                           </div>
-                          <Card className="p-1">
-                            <FaAngleRight />
-                          </Card>
                         </div>
                       );
                     })}
